@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* colors are changeable always more combinations are in "https://coolors.co/" */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --clr-Transparent-Soft-violet: hsla(0, 0%, 0%, 0.5);
+
+    /* animation and some effects */
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    /* font-fam*/
+    --body-font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+body {
+    font-family: var(--body-font-family);
+    text-decoration: var(--text-dec);
+    background-color: var(--white);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mx-t {
+    margin-top: 1rem, ;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.nav-gap {
+    gap: 2rem;
+}
+
+.black-clr {
+    color: black;
+}
+
+.white-clr {
+    color: rgb(255, 255, 255);
+}
+
+.orange-clr {
+    color: #e1533c;
+}
+
+.them-bg {
+    background-color: #eae5dc;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.logo-heading {
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #e1533c;
+    padding: 5px;
+    background-color: #eae5dc;
+}
+
+nav ul>li {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+nav ul>li:hover {
+    background-color: rgba(128, 128, 128, 0.199);
+}
+
+nav ul>li:nth-child(1) {
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+}
+
+.hero-section .hero-right-container {
+    width: 60%;
+}
+
+.hero-section .hero-left-container {
+    width: 40%;
+}
+
+.double {
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px dashed #e1533c;
+    border-bottom: 2px dashed #e1533c;
+}
+
+.bordered {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 2px dashed #e1533c;
+    border-bottom: 2px dashed #e1533c;
+}
+
+.bordered {
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.bordered p:nth-child(1) {
+    font-weight: 900;
+    font-size: 49px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bordered p:nth-child(2) {
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: -50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.bordered a {
+    padding: 44px;
+    background-color: white;
+    position: absolute;
+    left: 35%;
+    bottom: -30%;
+}
+
+.bordered .orange-clr-bg {
+    background-color: #e1533c;
+    padding: 35px;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 8%;
+    bottom: 0%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.info-container .left-content {
+    width: 30%;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+    border-right: 2px dashed #e1533c;
+    padding-right: 35px;
+
+}
+
+.sub-head {
+    line-height: 1.4em;
+    font-size: 29px;
+    padding-bottom: 10px;
+}
+
+.info-container .right-content {
+    width: 30%;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 35px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sub-head-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.caruosel {
+    width: 150px;
+    height: auto;
+    border: 8px solid white;
+}
+
+.section-three .left {
+    width: 30%;
+}
+
+.section-three .right {
+    width: 30%;
+}
+
+.orange-clr-bg {
+    background-color: #e1533c;
+    color: white;
+}
+
+footer ul {
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 2rem;
+
+    font-size: 14px;
+    padding-bottom: 10px;
+}
